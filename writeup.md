@@ -76,3 +76,4 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 ### 3. Suggest possible improvements to your pipeline
 1. If steering angle of the car is provided, it can be used as additional information to detect where is the lane line, assuming that the driver is always driving in the middle of the lane.
+2. Since lane lines do not change gradient suddenly, it is possible to use the gradient in the previous image as a guide to the gradient in the current image. However, the design of this pipeline in this assignment treats each image independently, so I could not implement this idea.
